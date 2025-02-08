@@ -1,4 +1,4 @@
-hashCrack.c uses an md5 hashing algorithm, in md5.c and md5.h, to hash given passwords and rules and hcek if they are 
+hashCrack.c uses an md5 hashing algorithm, in md5.c and md5.h, to hash given passwords and rules and checks if they are 
 contained within a given list of hashes.
 
 Input:
@@ -31,7 +31,7 @@ within a rule, the longer it will take the program finish.
 The number of passwords the program has to hash can be calculated by:
 52^l * 10^n        (where l is the number of %l's and n is the number of %n's within a single rule)
 
-The number of total checks the program has to make can be calcualted by:
+The number of total checks the program has to make can be calculated by:
 52^l * 10^n * h    (where l is the number of %l's, n is the number of %n's within a single rule and h is the number of hashes in hashes.txt)
 
 Both of these are exponential and so will grow rapidly, meaning that any rule larger than either 5 letters or numbers, or some combination of 
