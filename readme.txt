@@ -9,15 +9,15 @@ Modes:
        > e.g. ./hashCrack -p password1 
        > will give the output: 7c6a180b36896a0a8c02787eeafb0e4c
 -f - Takes a file of passwords and checks if their respective hashes are contained within a file of hashes
-       > e.g. ./hashCrack -f hashes.txt passwords.txt 
+       > e.g. ./hashCrack -f ./docs/hashes.txt ./docs/passwords.txt 
        > will return passwords that match the given hashes
 -b - Bruteforce mode, creates all passwords for a given rule and checks if their hashes match those within a given file
-       > e.g. ./hashCrack -b hashes.txt %l%l%n%n
+       > e.g. ./hashCrack -b ./docs/hashes.txt %l%l%n%n
        > will return any passwords, that fit the rule (where %l is a letter and %n is a number) that match any of the hashes 
          contained within hashes.txt
 -r - Takes a file of rules and creates passwords for those given rules and checks if their hashes match those within the given  
      file of hashes
-       > e.g. ./hashCrack -r hashes.txt rules.txt 
+       > e.g. ./hashCrack -r ./docs/hashes.txt ./docs/rules.txt 
        > will return any passwords, that fit any of the rules, that match any of the hashes within hashes.txt
 
 Example files have been provided:
